@@ -21,6 +21,10 @@ Thin Mode Changes
 
 #)  Internal change: improved performance when sending Oracle Deep Data
     Security end-user security contexts.
+#)  Fixed bug resulting in error ``DPY-4011: the database or network closed
+    the connection`` when connecting with asyncio and the listener closes its
+    side of the original connection only after the connection to the
+    redirected address has been established.
 
 Thick Mode Changes
 ++++++++++++++++++
